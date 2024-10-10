@@ -1,0 +1,38 @@
+Printing basics
+String manipulation 
+-	Adding a new line /n
+-	Concatenating (use + to do it)
+Input Function
+-	Input(“ “)
+example
+# we are using input function below which will prompt the user to enter the name and we are also concatenating the user input with hello
+print("Hello " + input("What is your name?") + "!")
+
+Variables:
+
+# print(len(input("what is your name? ")))
+
+username = input("what is your name? ")
+length = len(username)
+print(length)
+
+Creating a new variable, calculating the length of the charac from user input
+
+Variables naming
+Learn the rules of variable naming in Python.
+1.	Make sure your variable names are descriptive
+2.	Don't have spaces between words
+3.	Don't start with numbers
+4.	Don't use special words like print or input
+5.	Choose simple words that are less likely to become typos
+6.	Check the company style guidelines if you start work at a company
+
+Completed by creating a program for generating band name.
+
+print("Welcome to the Band Name Generator.")
+city = input("What's the name of the city you grew up in? \n")
+# print(city)
+pet_name = input("What's your pet's name? \n")
+# print(pet_name)
+print("Your band name could be " + city + " " + pet_name + ".")
+
