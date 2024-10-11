@@ -32,7 +32,7 @@ answer: yo
 #len() function Return the length (the number of items) of an object.
 # The argument may be a sequence (such as a string, bytes, tuple, list, or range) or a collection (such as a dictionary, set, or frozen set)
 # len("12345")
-#
+# len() function cannot take int as argument.
 # #check the datatype using type function also called as type checking
 # print(type("Hello"))
 # print(type(123))
