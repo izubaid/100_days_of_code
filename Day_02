@@ -1,0 +1,176 @@
+# Subscripting: The method of pulling out a particular element from a string is called subscripting, and the number
+# in between the square brackets determines which character you're going to pull out.
+from pprint import PrettyPrinter
+
+print("Hello"[1])
+
+# to count backwards,-1 will give the last element
+print("Hello"[-1])
+
+#string
+print("123" + "456") #Concatenation
+
+#Integer = Whole number
+print(123 + 345)
+
+#Large Integers
+print(123_456_789)
+
+# float = floating number
+print(3.123)
+
+# Boolean
+print(True)
+print(False)
+
+#quiz
+street_name = "Abbey Road"
+print(street_name[4] + street_name[7])
+
+
+#len() function Return the length (the number of items) of an object.
+# The argument may be a sequence (such as a string, bytes, tuple, list, or range) or a collection (such as a dictionary, set, or frozen set)
+# len("12345")
+#
+# #check the datatype using type function also called as type checking
+# print(type("Hello"))
+# print(type(123))
+# print(type(1.23))
+# print(type(True))
+
+
+#typecasting or type_conversion
+
+int("123")
+print(int("123") + int("456"))
+
+int()
+float()
+str()
+bool()
+
+#
+# print("Number of letters in your name: " + len(input("Enter your name")))
+#TypeError: can only concatenate str (not "int") to str
+
+#resolution - converted the input to string so it can concatenate
+print("Number of letters in your name: " + str(len(input("Enter your name"))))
+
+# value error
+# type error
+
+
+print("My age: " + str(12))
+print(123 + 456)
+print(7 - 3)
+print(3 * 2)
+
+# when you divide, it will give you a float. implicit typecasting
+print(6/3)
+print(5/3)
+#when you divide using // it will give you int but used for specific cases when you know it is divisible
+print(6//3)
+print(5//3)
+#exponent 10 to the power 2 means 10 x 10 = 100
+print(10**2)
+
+# PEMDAS
+# ()
+# **
+# * OR /
+# + OR -
+
+print(int(3 * 3 / 3 + 3 - 3))
+
+'''
+BMI CALCULATOR
+
+bmi is equal to the person's weight divided by the person's height squared.
+
+height = 1.65 
+weight = 84
+
+# Write your code here.
+# Calculate the bmi using weight and height.
+bmi = weight/height**2
+
+print(bmi)
+'''
+
+bmi = 84 / 1.65 ** 2
+print(bmi)
+
+
+
+
+
+
+#
+# bmi = 84 / 1.65 ** 2
+# print(bmi)
+# #flooring a number - remove decimal places using int() function converting float to integer
+# print(int(bmi))
+#
+# #rounding a number - round() function is used to round a decimal no to nearest whole number. 3.7->4 , 3.2->3
+# print(round(bmi))
+#
+# #round to 2 or 4 decimals places depending on use case
+# print(round(bmi, 3)) # 3 means it shows 3 decimal places
+#
+# '''
+# ASSIGNMENT OPERATORS
+# Assignment operators such as the addition assignment operator += will add the number on the right to the
+# original value of the variable on the left and assign the new value to the variable.
+# +=
+#
+# -=
+#
+# *=
+#
+# /=
+# '''
+# score = 0
+#
+# # team a scores a point
+#
+# score += 2
+#
+# # team a loses a point
+# score -= 1
+# print(score)
+#
+# '''
+# f-Strings
+# In Python, we can use f-strings to insert a variable or an expression into a string.
+#
+# age = 12
+#
+# print(f"I am {age} years old")
+#
+# # Will output I am 12 years old.
+# '''
+#
+# #f-strings
+# # if f-strings are not there this is how we will do but its not ideal
+# print("Your score is " + str(score))
+#
+# using f string below
+
+# score = 0
+# height = 1.8
+# is_winning = True
+#
+# print(f"Your score is  {score} and height is {height}. You are winning is {is_winning}")
+
+print("Welcome to the tip calculator!")
+bill = float(input("What was the total bill?  $"))
+tip = int(input("How much tip would you like to give?  10, 12, or 15?"))
+people = int(input("How many people to split the bill?"))
+bill_with_tip = (tip / 100) * bill
+total_bill = float(bill + bill_with_tip)
+amount_per_person = round(total_bill / people , 2)
+print(f"Each person should pay: ${amount_per_person}")
+
+
+
+
