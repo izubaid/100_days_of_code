@@ -1,6 +1,6 @@
 Printing basics
 String manipulation 
--	Adding a new line /n
+-	Adding a new line \n
 -	Concatenating (use + to do it)
 Input Function
 -	Input(“ “)
